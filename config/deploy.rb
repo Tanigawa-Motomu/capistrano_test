@@ -7,7 +7,7 @@ set :repo_url, "git@github.com:Tanigawa-Motomu/capistrano_test.git"
 # ここから追加
 set :branch,          'main'
 
-server "liberty1105-VirtualBox", port: 2525, roles: [:app, :web, :db], primary: true 
+server "liberty11052-VirtualBox", port: 2525, roles: [:app, :web, :db], primary: true 
 # server "本番環境のホスト名"は本番環境構築後に記述します。
 
 # user
