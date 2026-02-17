@@ -41,7 +41,7 @@ set :ssh_options,     {
 
 # rbenv
 set :rbenv_type, :user
-set :rbenv_ruby, '3.2.7'
+set :rbenv_ruby, '3.4.7'
 
 # environment
 set :linked_dirs, fetch(:linked_dirs, []).push(
