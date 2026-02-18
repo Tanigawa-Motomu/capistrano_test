@@ -30,8 +30,10 @@ production:
     adapter: postgresql
     encoding: utf8
     pool: 5
-    username: <%= ENV['PG_USER'] %>
-    password: <%= ENV['PG_PW'] %>
+    # username: <%= ENV['PG_USER'] %>
+    username: deploy
+    # password: <%= ENV['PG_PW'] %>
+    password: liberty1105-2
     host: localhost
     database: deploy_test_production
   cache:
