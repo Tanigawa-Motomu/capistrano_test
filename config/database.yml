@@ -33,22 +33,22 @@ production:
     username: <%= ENV['PG_USER'] %>
     password: <%= ENV['PG_PW'] %>
     host: localhost
-    database: capistrano_test_production
+    database: deploy_test_production
   cache:
     <<: *default
     # database: storage/production_cache.sqlite3
     # migrations_paths: db/cache_migrate
     adapter: postgresql
-    database: capistrano_test_production
+    database: deploy_test_production
   queue:
     <<: *default
     # database: storage/production_queue.sqlite3
     # migrations_paths: db/queue_migrate
     adapter: postgresql
-    database: capistrano_test_production
+    database: deploy_test_production
   cable:
     <<: *default
     # database: storage/production_cable.sqlite3
     # migrations_paths: db/cable_migrate
     adapter: postgresql
-    database: capistrano_test_production
+    database: deploy_test_production
