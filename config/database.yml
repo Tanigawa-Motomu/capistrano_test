@@ -34,7 +34,7 @@ production:
     username: deploy
     # password: <%= ENV['PG_PW'] %>
     password: liberty1105-2
-    host: localhost
+    host: 127.0.0.1
     database: deploy_test_production
   cache:
     <<: *default
