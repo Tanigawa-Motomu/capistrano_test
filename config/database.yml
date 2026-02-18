@@ -39,10 +39,8 @@ production:
     adapter: postgresql
     encoding: utf8
     pool: 5
-    # username: <%= ENV['PG_USER'] %>
-    username: deploy
-    # password: <%= ENV['PG_PW'] %>
-    password: liberty1105-2
+    username: <%= ENV['PG_USER'] %>
+    password: <%= ENV['PG_PW'] %>
     host: 127.0.0.1
     database: deploy_test_production
   cache:
@@ -51,8 +49,8 @@ production:
     # migrations_paths: db/cache_migrate
     adapter: postgresql
     database: deploy_test_production
-    username: deploy
-    password: liberty1105-2
+    username: <%= ENV['PG_USER'] %>
+    password: <%= ENV['PG_PW'] %>
     host: 127.0.0.1
   queue:
     <<: *default
@@ -60,8 +58,8 @@ production:
     # migrations_paths: db/queue_migrate
     adapter: postgresql
     database: deploy_test_production
-    username: deploy
-    password: liberty1105-2
+    username: <%= ENV['PG_USER'] %>
+    password: <%= ENV['PG_PW'] %>
     host: 127.0.0.1
   cable:
     <<: *default
@@ -69,6 +67,6 @@ production:
     # migrations_paths: db/cable_migrate
     adapter: postgresql
     database: deploy_test_production
-    username: deploy
-    password: liberty1105-2
+    username: <%= ENV['PG_USER'] %>
+    password: <%= ENV['PG_PW'] %>
     host: 127.0.0.1
